@@ -13,7 +13,7 @@
         <!-- Top spacing -->
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="31dp" />
 
         <!-- Top bar -->
         <LinearLayout
@@ -143,9 +143,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_height="71dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton18"
@@ -181,5 +181,9 @@
                 android:scaleType="centerCrop"
                 tools:srcCompat="@tools:sample/avatars" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
