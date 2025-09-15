@@ -22,11 +22,11 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginEnd="8dp"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:background="@drawable/circlepicture"
             android:clipToOutline="true"
-            android:src="@tools:sample/avatars"
+            android:foreground="@drawable/profilepic"
+            android:scaleType="centerCrop"
             tools:srcCompat="@tools:sample/avatars" />
 
 
@@ -48,9 +48,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="@drawable/postpic"
         android:scaleType="centerCrop"
-        android:src="@tools:sample/backgrounds/scenic"
-        android:layout_marginBottom="8dp" />
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <!-- Actions row -->
     <LinearLayout
