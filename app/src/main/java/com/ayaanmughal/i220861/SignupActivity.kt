@@ -2,20 +2,21 @@ package com.ayaanmughal.i220861
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // This is your splash screen
+        setContentView(R.layout.signup)
 
-        // Wait 2 seconds, then go to signup screen
-        Handler(Looper.getMainLooper()).postDelayed({
+        val createAccountButton = findViewById<Button>(R.id.button4)
+
+        createAccountButton.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 2000)
+        }
     }
 }
+

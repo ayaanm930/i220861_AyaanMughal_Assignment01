@@ -94,115 +94,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- 🖼️ Row 1 — two stacked on left, one big on right -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
-                <!-- Left column (2 stacked) -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_margin="2dp"
-                        android:scaleType="centerCrop"
-                        android:src="@tools:sample/backgrounds/scenic" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_margin="2dp"
-                        android:scaleType="centerCrop"
-                        android:src="@tools:sample/backgrounds/scenic" />
-                </LinearLayout>
-
-                <!-- Right big square -->
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="204dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-            </LinearLayout>
-
-            <!-- 🖼️ Row 3 — 3 equal squares -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <!-- Right big square -->
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="204dp"
-                    android:layout_weight="1"
-                    android:layout_margin="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -214,16 +109,27 @@
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="2dp"
+                        android:foreground="@drawable/postpic"
                         android:scaleType="centerCrop"
-                        android:src="@tools:sample/backgrounds/scenic" />
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@tools:sample/backgrounds/scenic" />
+                        android:foreground="@drawable/profilepic"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="204dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/pic4"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -233,26 +139,29 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
                     android:layout_margin="2dp"
+                    android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
+                    android:foreground="@drawable/profilepic"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
                     android:layout_margin="2dp"
+                    android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
+                    android:foreground="@drawable/pic4"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
                     android:layout_margin="2dp"
+                    android:foreground="@drawable/postpic"
+                    android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
             </LinearLayout>
 
             <!-- 🖼️ Row 3 — 3 equal squares -->
@@ -264,26 +173,132 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
+                    android:foreground="@drawable/profilepic"
                     android:layout_margin="2dp"
+                    android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
                     android:layout_margin="2dp"
+                    android:foreground="@drawable/postpic"
+                    android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_weight="1"
                     android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:foreground="@drawable/profilepic"
                     android:scaleType="centerCrop"
-                    android:src="@tools:sample/backgrounds/scenic" />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Right big square -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="204dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/profilepic"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="2dp"
+                        android:scaleType="centerCrop"
+                        android:foreground="@drawable/pic4"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="2dp"
+                        android:foreground="@drawable/profilepic"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:foreground="@drawable/postpic"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/pic4"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:foreground="@drawable/profilepic"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            </LinearLayout>
+
+            <!-- 🖼️ Row 3 — 3 equal squares -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/pic4"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:foreground="@drawable/postpic"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:foreground="@drawable/profilepic"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
             </LinearLayout>
 
 
@@ -293,6 +308,7 @@
         android:layout_width="match_parent"
         android:layout_height="71dp"
         android:gravity="center_vertical"
+
         android:orientation="horizontal">
 
         <ImageButton
@@ -327,6 +343,7 @@
             android:background="@drawable/circlepicture"
             android:clipToOutline="true"
             android:scaleType="centerCrop"
+            android:foreground="@drawable/profilepic"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
